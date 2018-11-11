@@ -1,0 +1,6 @@
+.custom-checkbox > input[type="checkbox"] { position: absolute; top: -999999px; left: -999999px; }
+.custom-checkbox > input[type="checkbox"] + label { display: block; }
+.custom-checkbox > input[type="checkbox"] + label::before { -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 5px; content: "x"; font-weight: bold; height: 18px; width: 18px; color: transparent; border: 1px solid MediumSeaGreen; border-radius: 2px; }
+.custom-checkbox > input[type="checkbox"]:checked + label::before { background-color: MediumSeaGreen; color: white; border: none; }
+
+/*# sourceMappingURL=style.css.map */

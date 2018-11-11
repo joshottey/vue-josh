@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  }
+  #app {background-color:#ccc;padding:10px;display:inline-block;border-radius:5px;}
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <form action="">
+      <checkbox v-for="choice in selections" :key="choice.id" :choice="choice"></checkbox>
+    </form>
+
+  </div>
+  <script src="https://unpkg.com/vue@2.5.17/dist/vue.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
+</body>
+</html>

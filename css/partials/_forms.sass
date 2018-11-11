@@ -1,0 +1,25 @@
+.custom-checkbox
+  & > input[type="checkbox"]
+    position: absolute
+    top: -999999px
+    left: -999999px
+    & + label
+      display: block
+      // vertical-align: bottom
+      &::before
+        box-sizing: border-box
+        display: inline-flex
+        justify-content: space-around
+        align-items: center
+        margin-right: 5px
+        content: 'x'
+        font-weight: bold
+        height: 18px
+        width: 18px
+        color: transparent
+        border: 1px solid MediumSeaGreen
+        border-radius: 2px
+    &:checked + label::before
+      background-color: MediumSeaGreen
+      color: white
+      border: none
