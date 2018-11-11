@@ -17,12 +17,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Begin root Vue instance "app" -->
   <div id="app">
+    <p>Which fruits do you like?</p>
     <form action="">
+      <!--
+        Create instance of 'checkbox' component
+        Creates multiple checkboxes based on root Vue data object
+      -->
       <checkbox v-for="choice in selections" :key="choice.id" :choice="choice"></checkbox>
+      <!-- End 'checkbox' component -->
     </form>
-
+    <!-- Testing selections -->
+    <p><strong>Favorite fruits:</strong>
+      <span style="display:block;" v-for="each in selections" v-if="each.check">{{ each.name }}</span>
+    </p>
+    <!-- End testing selections -->
   </div>
+  <!-- End root Vue instance "app" -->
+
+  <!--
+    Bring in JavaScript:
+    Vue core and main.js for root Vue instance and components
+  -->
   <script src="https://unpkg.com/vue@2.5.17/dist/vue.js" charset="utf-8"></script>
   <script src="main.js" charset="utf-8"></script>
 </body>
