@@ -29,9 +29,11 @@
       <!-- End 'checkbox' component -->
     </form>
     <!-- Testing selections -->
-    <p><strong>Favorite fruits:</strong>
+    <p v-if="selections.filter(function(each){return each.check}).length===0">You hate fruit, you monster.</p>
+    <p v-else><strong>Favorite fruits:</strong>
       <span style="display:block;" v-for="each in selections" v-if="each.check">{{ each.name }}</span>
     </p>
+
     <!-- End testing selections -->
   </div>
   <!-- End root Vue instance "app" -->
