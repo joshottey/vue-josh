@@ -1,5 +1,5 @@
 # vue-josh
-A library of custom form components with Vue.js
+A collection of custom form components with Vue.js
 ### Things to be done...
 * bring in Material Icons for check marks, etc.
 * sass partial for branding (color palette, font-weight, borders, etc.)
